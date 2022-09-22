@@ -1,0 +1,41 @@
+.Header{
+    background-color: blue;
+    height: 30vh;
+}
+.Menu{
+    background-color: yellow;
+    height: 8vh;
+
+}
+
+.Contenido{
+    background-color: red;
+    width: 85%;
+
+}
+
+.Publicidad{
+    background-color: orange;
+    height: 80vh;
+    width: 15%;
+
+}
+
+.Centro{
+    display: flex;
+}
+
+.Pie{
+    background-color: brown;
+    height: 10vh;
+
+}
+
+html, body{
+    height: 100%;
+}
+*{
+    text-align: center ;
+    margin: 0%;
+    border: 2px solid black;
+}
