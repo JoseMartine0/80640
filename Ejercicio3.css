@@ -1,0 +1,25 @@
+div{
+    width: 140px;
+    height: 140px;
+    display: inline-block;
+}
+
+
+.negro{
+    border: 4px solid black;
+}
+
+.rojo{
+    height: 55px;
+    padding: 0;
+    margin: 0;
+    border: 4px solid red;
+    position: sticky;
+    top: 30px;
+    right: 10px;
+}
+.menu{
+    margin: 0;
+    background: yellow;
+}
+
