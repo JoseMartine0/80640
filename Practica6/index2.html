@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <forms action="http://localhost:4567" method="">
+        <input type="text" id="email" placeholder="name">
+        <input type="text" id="password" placeholder="password">
+        <button type="button" id="enviar">Enviar</button>
+    </forms>
+
+    <script>
+        var bEnviar = document.getElementById("enviar")
+        bEnviar.addEventListener("click", function () {
+            //aqui inicia 
+            let email = document.getElementById("email").value
+            let password = document.getElementById("password").value
+            axios.post("http://localhost:4567",{
+                email: email,
+                password: password
+
+            }
+            .then(function (response){
+                console.log("respuesta", response)
+            })
+            .catch(function (error){
+                console.log("error:", error)
+            })
+            
+
+        })
+    </script>
+</body>
+</html>

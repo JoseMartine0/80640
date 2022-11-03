@@ -13,4 +13,10 @@ public class App
         System.out.println( "Hello World!" );
         get("/hello", (req, res) -> "Hello World");
     }
+
+    post( "/", (req, res)-> {
+        System.out.println(req.queryParams(queryParams:"email") + " " +req.queryParams(queryParams))
+        System.out.println(req.body));
+        
+    }
 }
